@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atwell Mart</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function openTab(tab) {
+            document.querySelectorAll("section").forEach(sec => sec.style.display = "none");
+            document.getElementById(tab).style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo" onclick="openTab('home')">Atwell Mart</div>
+
+        <nav class="nav-menu">
+            <span class="nav-item home" onclick="openTab('home')">Beranda</span>
+            <span class="nav-item kategori" onclick="openTab('kategori')">Kategori</span>
+            <span class="nav-item produk" onclick="openTab('produk')">Produk</span>
+            <span class="nav-item kontak" onclick="openTab('kontak')">Kontak</span>
+        </nav>
+
+        <input type="text" class="search" placeholder="Cari perlengkapan sekolah... ✨">
+        <button class="btn-login">Masuk</button>
+    </header>
+
+    <section id="home">
+        <div class="banner">
+            <h2>Welcome To Atwell Mart ✨</h2>
+            <p>Perlengkapan sekolah lucu & lengkap!</p>
+        </div>
+    </section>
+
+    <section id="kategori">
+        <h3>Kategori Sekolah ✨</h3>
+        <div class="list-kategori">
+            <div class="card">Alat Tulis ✏️</div>
+            <div class="card">Buku & Binder 📚</div>
+            <div class="card">Tas Sekolah 🎒</div>
+            <div class="card">Kotak Pensil 🧰</div>
+            <div class="card">Sticker Dekorasi 💕</div>
+            <div class="card">Peralatan Warna 🎨</div>
+        </div>
+    </section>
+
+    <section id="produk">
+        <h3>Peralatan Sekolah 🤍</h3>
+        <div class="list-produk">
+
+            <div class="product-card">
+                <img src="pensil.jpg">
+                <h4>Pensil Mekanik Cute</h4>
+                <p class="price">Rp 12.000</p>
+                <button class="btn-buy">Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="buku.avif">
+                <h4>Buku Catatan Pastel</h4>
+                <p class="price">Rp 15.000</p>
+                <button class="btn-buy">Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="tas.jpg">
+                <h4>Tas Sekolah Pink</h4>
+                <p class="price">Rp 85.000</p>
+                <button class="btn-buy">Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="kotak.jpg">
+                <h4>Kotak Pensil Kawaii</h4>
+                <p class="price">Rp 25.000</p>
+                <button class="btn-buy">Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="high.jpg">
+                <h4>Highlighter Pastel 6 Warna</h4>
+                <p class="price">Rp 30.000</p>
+                <button class="btn-buy">Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="stiker.avif">
+                <h4>Sticker Planner Lucu</h4>
+                <p class="price">Rp 8.000</p>
+                <button class="btn-buy">Beli</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak">
+        <h3>Kontak Kami 🌸</h3>
+        <p>Email: <b>support@atwellmart.id</b></p>
+        <p>Instagram: <b>@atwellmart</b></p>
+        <p>No. WhatsApp: <b>0812-3456-7890</b></p>
+
+        <button class="btn-buy" onclick="openTab('home')">Kembali ke Beranda</button>
+    </section>
+
+    <footer>
+        © 2025 Atwell Mart — Perlengkapan sekolah lengkap & lucu ✨
+    </footer>
+
+</body>
+</html>

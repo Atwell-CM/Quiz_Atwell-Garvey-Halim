@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    background: #ffeef7;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: #ff8ec7;
+    padding: 18px 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(255, 142, 199, 0.4);
+    border-bottom: 4px solid #ffb8e5;
+}
+
+.logo {
+    font-size: 28px;
+    font-family: "Pacifico", cursive;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-item {
+    padding: 8px 16px;
+    border-radius: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    border: 2px solid white;
+    transition: 0.25s;
+}
+
+.home { background: #ff96cd; }
+.kategori { background: #ffe27b; }
+.produk { background: #d0b6ff; }
+.kontak { background: #99d5ff; }
+
+.nav-item:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+.search {
+    width: 25%;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 120, 180, 0.3);
+}
+
+.btn-login {
+    padding: 10px 18px;
+    background: white;
+    color: #ff75b5;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #ffe2f1;
+}
+
+section {
+    display: none;
+    padding: 20px;
+}
+
+#home {
+    display: block;
+}
+
+.banner {
+    background: url("pink.avif") center/cover;
+    height: 260px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(237, 103, 176, 0.35);
+}
+
+.banner h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 0 0 8px #ff9ad7;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+.list-kategori {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: #fff0f7;
+    padding: 18px;
+    border-radius: 18px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ff4da6;
+    border: 2px solid #ffcdea;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    background: #ffb8e5;
+    color: white;
+}
+
+.list-produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff7fc;
+    border-radius: 18px;
+    padding: 15px;
+    border: 2px solid #ffe0f2;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 3px solid #ffdaf0;
+}
+
+.price {
+    color: #ff4fa9;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn-buy {
+    background: #ff8ec7;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    background: #ff73b9;
+}
+
+footer {
+    background: #ff8ec7;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 4px solid #ffb7e7;
+}
